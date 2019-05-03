@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import ReactNativeHapticFeedback from 'react-native-haptic-feedback';
 
 class LetterPicker extends Component {
-
     render() {
         return (
           <TouchableOpacity onPress={() => this.props.setLatter(this.props.letter)}>
@@ -16,7 +15,7 @@ class LetterPicker extends Component {
     }
 }
 
-const Alphabet = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
+let Alphabet = "#ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
 export default class AlphabetPicker extends Component {
     constructor(props, context) {
         super(props, context);
